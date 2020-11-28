@@ -1,0 +1,64 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+cout<<"\nPrinting pattern ";
+ cout<<"\n ***********";
+ 
+ cout<<"\n*\t\t\t*\n*\t\t\t*\n*\t\t\t*\n*\t\t\t*\n*\t\t\t*\n*\t\t\t*\n*\t\t\t*\n*\t\t\t* ";
+ cout<<"\n *********** ";
+ cout<<"\nOval";
+cout<<"\n \t    ***";
+cout<<"\n\t  * \t *";
+cout<<"\n\t *   \t  *";
+cout<<"\n\t *   \t  *";
+cout<<"\n\t *   \t  *";
+cout<<"\n\t *   \t  *";
+cout<<"\n\t *   \t  *";
+cout<<"\n\t  *  \t *";
+cout<<"\n \t    ***";
+cout<<"\nStand";
+cout<<"\n\t   *";
+cout<<"\n\t  ***";
+cout<<"\n\t *****";
+cout<<"\n\t   *";
+cout<<"\n\t   *";
+cout<<"\n\t   *";
+cout<<"\n\t   *";
+cout<<"\n\t   *";
+cout<<"\nDimonand";
+cout<<"\n      *";
+cout<<"\n     * *";
+cout<<"\n    *   *";
+cout<<"\n   *     *";
+cout<<"\n  *       *";
+cout<<"\n *         *";
+cout<<"\n  *       *";
+cout<<"\n   *     * ";
+cout<<"\n     *  *";
+cout<<"\n       * ";
+
+cout<<"\nCheckboard";
+cout<<"\n* * * * * * * *";
+cout<<"\n * * * * * * * *";
+cout<<"\n* * * * * * * *";
+cout<<"\n * * * * * * * *";
+cout<<"\n* * * * * * * *";
+cout<<"\n * * * * * * * *";
+cout<<"\n* * * * * * * *";
+cout<<"\n * * * * * * * *";
+
+
+ 
+return 0; 
+} 
+
+ 
+ 
+
+
+ 
+ 
+ 
+ 
