@@ -1,0 +1,75 @@
+#include<iostream>
+#include<fstream>
+#include<stdio.h>
+#include <string.h>
+
+using namespace std;
+int main()
+{
+  char data[15];
+  int num=0;
+  char rego[9];
+  int option;
+  cout<<"\nAvailable option:\n1) Registar as new student \n2) Login \n3) Exit";
+  cout<<"\nEnter your option: ";
+  cin>>option;
+  if(option==1)
+  {
+ cout<<"\nEnter the number of student: ";
+  cin>>num;
+  
+  for(int i=0;i<num;i++)
+  {
+   ofstream f;
+   f.open("database.txt",ios::app);
+   
+cout<<"\nEnter registration number:";
+   cin>>data;
+f<<data<<"\t"<<"\t"<<"\t"<<"\t"<<"\t"<<"\t"<<"\t"<<"\t"<<"\t";
+cout<<"\nEnter your name:";
+   cin>>data;
+f<<data<<"\t"<<"\t"<<"\t"<<"\t"<<"\t"<<"\t"<<"\t";
+cout<<"\nEnter your proctor ID:";
+   cin>>data;
+f<<data<<"\t"<<"\t"<<"\t"<<"\t"<<"\t"
+   <<"\t"<<"\t"<<"\t";
+f<<endl;
+   }
+   }
+   else if(option==2)
+   {
+   int check=0;
+cout<<"\nEnter your Registration number= ";
+  cin>>rego;
+  ifstream inf;
+  inf.open("database.txt",ios::in);
+  
+  while(inf>>data)
+  {
+   if(strcmp(data,rego)==0)
+   {
+  cout<<"\nRegistrtion no= "<<data<<endl;
+   inf>>data;
+   cout<<"\nName= "<<data<<endl;
+   inf>>data;
+   cout<<"\nproctor ID= "<<data<<endl;
+   inf.close();
+   check=1;
+   	}
+   }
+  if(check==0)
+   {
+ cout<<"\nNo such regisration number found!"<<endl;
+ }
+}
+
+else if(option==3)
+{
+ 
+ cout<<"\n    Thank you....!:-)";
+ 
+ }
+   return 0;
+   }
+   
+
